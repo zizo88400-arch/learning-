@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>المسابقات والاختبارات 🏆</h1><div class="tiles resources">{% for q in items %}<div class="panel"><h2>{{ q.title }}</h2><p>{{ q.subject }} · {{ q.grade }}</p><a class="gold linkbtn" href="{{ url_for('quiz',i=q.id) }}">ابدأ الاختبار</a></div>{% else %}<div class="empty">قريبًا هنضيف اختبارات جديدة.</div>{% endfor %}</div>{% endblock %}
