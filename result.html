@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<section class="narrow panel center"><div class="seal">🏆</div><h1>نتيجتك في {{ quiz.title }}</h1><div class="score">{{ score }} / {{ total }}</div><p>استمر في التعلم والتقدم!</p><a class="gold linkbtn" href="{{ url_for('quizzes') }}">العودة للاختبارات</a></section>{% endblock %}
