@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>الأخبار والإعلانات 📰</h1>{% for n in items %}<article class="panel news"><small>{{ n.created.strftime('%Y-%m-%d') }}</small><h2>{{ n.title }}</h2><p>{{ n.body }}</p></article>{% else %}<div class="empty">لا توجد أخبار منشورة حاليًا.</div>{% endfor %}{% endblock %}
